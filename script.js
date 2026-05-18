@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 navLinks.style.top = '100%';
                 navLinks.style.left = '0';
                 navLinks.style.width = '100%';
-                navLinks.style.background = 'white';
+                navLinks.style.background = 'var(--bg-alt)';
                 navLinks.style.padding = '1rem';
                 navLinks.style.boxShadow = '0 10px 20px rgba(0,0,0,0.1)';
             }
@@ -95,6 +95,32 @@ document.addEventListener('DOMContentLoaded', () => {
             navLinks.style.padding = '0';
         } else if (navLinks && navLinks.style.display === 'flex') {
             navLinks.style.display = 'none';
+        }
+    });
+
+    // --- Theme Toggle Logic ---
+    const themeToggle = document.querySelector('#theme-toggle');
+    const themeIcon = themeToggle.querySelector('i');
+    const body = document.body;
+
+    // Check for saved theme
+    const savedTheme = localStorage.getItem('portfolio-theme');
+    if (savedTheme === 'light') {
+        body.classList.add('light-mode');
+        themeIcon.classList.replace('fa-moon', 'fa-sun');
+    }
+
+    themeToggle.addEventListener('click', () => {
+        body.classList.toggle('light-mode');
+        const isLight = body.classList.contains('light-mode');
+        
+        // Update Icon
+        if (isLight) {
+            themeIcon.classList.replace('fa-moon', 'fa-sun');
+            localStorage.setItem('portfolio-theme', 'light');
+        } else {
+            themeIcon.classList.replace('fa-sun', 'fa-moon');
+            localStorage.setItem('portfolio-theme', 'dark');
         }
     });
 
