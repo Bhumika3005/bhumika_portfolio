@@ -639,40 +639,71 @@ ul {
 
 .cert-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
     gap: 1.8rem;
-    max-width: 900px;
+    max-width: var(--max-width);
     margin: 0 auto;
 }
 
 .cert-card {
     display: flex;
-    align-items: center;
-    gap: 1.5rem;
-    padding: 1.6rem;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.8rem;
     color: inherit;
 }
 
+.cert-top {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.2rem;
+    margin-bottom: 1.2rem;
+}
+
 .cert-icon {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     color: var(--secondary-color);
     background: rgba(129, 140, 248, 0.12);
-    width: 58px;
-    height: 58px;
-    min-width: 58px;
+    width: 52px;
+    height: 52px;
+    min-width: 52px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
 }
 
-.cert-info h3 {
-    font-size: 1.05rem;
-    margin-bottom: 0.25rem;
+.cert-info {
+    flex: 1;
 }
 
-.cert-info p {
-    color: var(--text-secondary);
+.cert-info h3 {
+    font-size: 1.05rem;
+    margin-bottom: 0.4rem;
+    line-height: 1.4;
+    color: var(--text-primary);
+}
+
+.cert-info .cert-org {
+    color: var(--primary-color);
+    font-size: 0.88rem;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.cert-action {
+    margin-top: auto;
+    padding-top: 1.2rem;
+    border-top: 1px solid var(--border-color);
+    display: flex;
+}
+
+.cert-action .btn {
+    width: 100%;
+    justify-content: center;
+    padding: 0.6rem 1.2rem;
     font-size: 0.9rem;
 }
 
@@ -881,6 +912,10 @@ footer {
         grid-template-columns: 1fr;
     }
     
+    .cert-grid {
+        grid-template-columns: 1fr;
+    }
+
     .contact-details {
         flex-direction: column;
         align-items: stretch;
@@ -929,5 +964,9 @@ footer {
 
     .hero-buttons .btn {
         width: 100%;
+    }
+
+    .cert-card {
+        padding: 1.4rem;
     }
 }
