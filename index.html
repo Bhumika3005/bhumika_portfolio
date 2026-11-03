@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bhumika K | Portfolio</title>
+    <title>Bhumika K | MCA Graduate & AI Developer Portfolio</title>
+    <meta name="description" content="Portfolio of Bhumika K - MCA Graduate | AI & Software Developer specializing in Machine Learning, Data Science, and intelligent solutions.">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,15 +25,16 @@
                 <a href="#about">About</a>
                 <a href="#skills">Skills</a>
                 <a href="#projects">Projects</a>
-                <a href="#education">Education & Experience</a>
+                <a href="#education">Experience & Education</a>
+                <a href="#certifications">Certifications</a>
                 <a href="#resume">Resume</a>
                 <a href="#contact">Contact</a>
             </div>
             <div class="nav-actions">
-                <div id="theme-toggle" class="theme-toggle">
+                <div id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme" role="button" tabindex="0">
                     <i class="fa-solid fa-moon"></i>
                 </div>
-                <div class="hamburger">
+                <div class="hamburger" aria-label="Toggle Menu" role="button" tabindex="0">
                     <i class="fa-solid fa-bars"></i>
                 </div>
             </div>
@@ -44,7 +46,7 @@
         <div class="hero-content">
             <h2 class="greeting">Hi, I'm</h2>
             <h1 class="name">Bhumika K</h1>
-            <h3 class="title">IT Student / Developer</h3>
+            <h3 class="title">MCA Graduate | AI & Software Developer</h3>
             <p class="tagline">"Building intelligent solutions using AI and Machine Learning"</p>
             <div class="hero-buttons">
                 <a href="#projects" class="btn btn-primary">View Projects</a>
@@ -65,11 +67,8 @@
             <h2 class="section-title">About Me</h2>
             <div class="about-content">
                 <div class="about-text card glass-card">
-                    <p>Motivated MCA student with strong interest in Machine Learning, Data Science, and Software
-                        Development. Skilled in building predictive models and intelligent applications using Python and
-                        modern ML libraries.</p>
-                    <p>Experienced in data preprocessing, model training, and deploying AI-based systems. Passionate
-                        about solving real-world problems through analytical thinking and software development.</p>
+                    <p>I am a Master of Computer Applications (MCA) graduate with a strong interest in Artificial Intelligence, Machine Learning, Data Science, and Software Development. I specialize in building predictive models, intelligent recommendation systems, and modern AI-driven applications.</p>
+                    <p>With hands-on experience in data preprocessing, feature engineering, model training, and full-stack integration, I am passionate about solving real-world challenges through analytical thinking, robust code, and practical machine learning solutions.</p>
                 </div>
             </div>
         </div>
@@ -81,14 +80,17 @@
             <h2 class="section-title">My Skills</h2>
             <div class="skills-grid">
                 <div class="skill-category card">
-                    <h3><i class="fa-solid fa-code"></i> Programming</h3>
+                    <h3><i class="fa-solid fa-code"></i> Programming & Web</h3>
                     <ul class="skill-list">
                         <li><span class="skill-tag">Python</span></li>
                         <li><span class="skill-tag">Java (Basic)</span></li>
+                        <li><span class="skill-tag">React.js</span></li>
+                        <li><span class="skill-tag">FastAPI</span></li>
+                        <li><span class="skill-tag">Flask</span></li>
                     </ul>
                 </div>
                 <div class="skill-category card">
-                    <h3><i class="fa-solid fa-layer-group"></i> Libraries</h3>
+                    <h3><i class="fa-solid fa-layer-group"></i> Libraries & Frameworks</h3>
                     <ul class="skill-list">
                         <li><span class="skill-tag">Pandas</span></li>
                         <li><span class="skill-tag">NumPy</span></li>
@@ -97,20 +99,25 @@
                     </ul>
                 </div>
                 <div class="skill-category card">
-                    <h3><i class="fa-solid fa-lightbulb"></i> Concepts</h3>
+                    <h3><i class="fa-solid fa-brain"></i> AI & Concepts</h3>
                     <ul class="skill-list">
+                        <li><span class="skill-tag">Artificial Intelligence</span></li>
                         <li><span class="skill-tag">Machine Learning</span></li>
-                        <li><span class="skill-tag">Data Science</span></li>
-                        <li><span class="skill-tag">AI</span></li>
                         <li><span class="skill-tag">Deep Learning</span></li>
+                        <li><span class="skill-tag">Data Science</span></li>
+                        <li><span class="skill-tag">RAG</span></li>
+                        <li><span class="skill-tag">LLMs</span></li>
                     </ul>
                 </div>
                 <div class="skill-category card">
-                    <h3><i class="fa-solid fa-screwdriver-wrench"></i> Tools & Databases</h3>
+                    <h3><i class="fa-solid fa-database"></i> Tools & Databases</h3>
                     <ul class="skill-list">
+                        <li><span class="skill-tag">PostgreSQL</span></li>
+                        <li><span class="skill-tag">Supabase</span></li>
+                        <li><span class="skill-tag">MySQL</span></li>
                         <li><span class="skill-tag">VS Code</span></li>
                         <li><span class="skill-tag">Jupyter Notebook</span></li>
-                        <li><span class="skill-tag">MySQL</span></li>
+                        <li><span class="skill-tag">Git & GitHub</span></li>
                     </ul>
                 </div>
             </div>
@@ -120,166 +127,202 @@
     <!-- Projects Section -->
     <section id="projects" class="projects section hidden">
         <div class="container">
-            <h2 class="section-title">Projects</h2>
+            <h2 class="section-title">Featured Projects</h2>
             <div class="projects-grid">
-                <!-- Project 1 -->
+                <!-- Project 1: LearnSphere -->
                 <div class="project-card card hover-lift">
-                    <div class="project-icon"><i class="fa-solid fa-shield-halved"></i></div>
-                    <h3>Fraud Detection System</h3>
-                    <p class="project-desc" style="font-size: 0.95rem;">Developed a machine learning-based system to
-                        identify fraudulent financial transactions using Python, Pandas, and Scikit-learn. Performed
-                        data preprocessing, feature selection, and model training. Built and integrated the trained
-                        model with a Flask web app for real-time transaction prediction and monitoring.</p>
-                    <div class="tech-stack">
-                        <span class="tech-tag">Machine Learning</span>
-                        <span class="tech-tag">Flask</span>
-                        <span class="tech-tag">Python</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/Bhumika3005/FRAUD-DETECTION-ML-PROJECT.git"
-                            class="btn btn-sm btn-outline"><i class="fa-brands fa-github"></i> View Source</a>
-                    </div>
-                </div>
-
-                <!-- Project 2 -->
-                <div class="project-card card hover-lift">
-                    <div class="project-icon"><i class="fa-solid fa-user-doctor"></i></div>
-                    <h3>MRI Brain Tumor Detection</h3>
-                    <p class="project-desc" style="font-size: 0.95rem;">Developed a deep learning model using
-                        Convolutional Neural Networks (CNNs) to detect brain tumors from MRI images. Applied image
-                        preprocessing, dataset augmentation, and model training techniques. Integrated a React frontend
-                        with a Flask backend and OpenAI API to generate automated diagnostic reports.</p>
-                    <div class="tech-stack">
-                        <span class="tech-tag">CNN</span>
-                        <span class="tech-tag">React</span>
-                        <span class="tech-tag">Flask</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/Bhumika3005/MRI-BASED-BRAIN-TUMOR-DETECTION-PROJECT.git"
-                            class="btn btn-sm btn-outline"><i class="fa-brands fa-github"></i> View Source</a>
-                    </div>
-                </div>
-
-                <!-- Project 3 -->
-
-                <div class="project-card card hover-lift">
-                    <div class="project-icon"><i class="fa-solid fa-robot"></i></div>
-                    <h3>Personalized Learning Recommendation System</h3>
-                    <p class="project-desc" style="font-size: 0.95rem;">Developed an AI‑powered personalized learning
-                        recommendation system using Large Language Models (LLMs), Retrieval‑Augmented Generation (RAG),
-                        semantic embeddings, and vector databases.</p>
+                    <div class="project-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <h3>LearnSphere: AI-Based Course Recommendation and Academic Assistance Platform</h3>
+                    <p class="project-desc">Developed an AI-powered personalized learning platform that provides course recommendations, dynamic learning roadmaps, academic chatbot assistance, assessments, progress tracking and certificate generation.</p>
                     <div class="tech-stack">
                         <span class="tech-tag">Python</span>
-                        <span class="tech-tag">GPT‑4</span>
-                        <span class="tech-tag">DeepSeek</span>
-                        <span class="tech-tag">LangChain</span>
-                        <span class="tech-tag">Pinecone</span>
-                        <span class="tech-tag">Streamlit</span>
-                        <span class="tech-tag">NLP</span>
+                        <span class="tech-tag">React.js</span>
+                        <span class="tech-tag">FastAPI</span>
+                        <span class="tech-tag">Supabase</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">Google Gemini API</span>
+                        <span class="tech-tag">Groq API</span>
+                        <span class="tech-tag">RAG</span>
                     </div>
                     <div class="project-links">
                         <a href="https://github.com/Bhumika3005/Personalized-Learning-Recommendation-System.git"
-                            class="btn btn-sm btn-outline"><i class="fa-solid fa-link"></i> View Details</a>
+                            target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline"><i class="fa-brands fa-github"></i> View Source</a>
+                    </div>
+                </div>
+
+                <!-- Project 2: MRI Brain Tumor Detection -->
+                <div class="project-card card hover-lift">
+                    <div class="project-icon"><i class="fa-solid fa-brain"></i></div>
+                    <h3>MRI Brain Tumor Detection</h3>
+                    <p class="project-desc">Developed a deep learning model using Convolutional Neural Networks (CNNs) to detect brain tumors from MRI images. Applied image preprocessing, dataset augmentation, and model training techniques. Integrated a React frontend with a Flask backend and OpenAI API to generate automated diagnostic reports.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">CNN</span>
+                        <span class="tech-tag">Deep Learning</span>
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Flask</span>
+                        <span class="tech-tag">Python</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Bhumika3005/MRI-BASED-BRAIN-TUMOR-DETECTION-PROJECT.git"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline"><i class="fa-brands fa-github"></i> View Source</a>
+                    </div>
+                </div>
+
+                <!-- Project 3: Fraud Detection System -->
+                <div class="project-card card hover-lift">
+                    <div class="project-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h3>Fraud Detection System</h3>
+                    <p class="project-desc">Developed a machine learning-based system to identify fraudulent financial transactions using Python, Pandas, and Scikit-learn. Performed data preprocessing, feature selection, and model training. Built and integrated the trained model with a Flask web app for real-time transaction prediction and monitoring.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Machine Learning</span>
+                        <span class="tech-tag">Scikit-learn</span>
+                        <span class="tech-tag">Flask</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Pandas</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Bhumika3005/FRAUD-DETECTION-ML-PROJECT.git"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline"><i class="fa-brands fa-github"></i> View Source</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-
-    <!-- Education & Experience Section -->
+    <!-- Experience & Education Section -->
     <section id="education" class="timeline-section section hidden">
         <div class="container">
             <h2 class="section-title">Experience & Education</h2>
 
             <div class="timeline">
-
-                <!-- Internship -->
+                <!-- Experience 1: UptoSkills -->
                 <div class="timeline-item">
                     <div class="timeline-dot bg-accent"></div>
                     <div class="timeline-content card glass-card">
-                        <span class="timeline-date">Internship</span>
-                        <h3>Data Science Intern</h3>
-                        <h4>Codec Technologies (1 month)</h4>
-                        <ul style="padding-left: 1.2rem; color: var(--text-secondary); font-size: 0.95rem;">
-                            <li style="margin-bottom: 0.5rem;">Worked on data preprocessing, cleaning, analysis, and
-                                feature engineering using Python, Pandas, and NumPy on real-world datasets.</li>
-                            <li>Assisted in developing and evaluating machine learning models for predictive analysis
-                                and gained practical exposure to AI-based application development.</li>
-                        </ul>
+                        <div class="timeline-header">
+                            <span class="timeline-date"><i class="fa-regular fa-calendar"></i> April 2026 – July 2026</span>
+                            <span class="timeline-status"><i class="fa-solid fa-circle-check"></i> Completed</span>
+                        </div>
+                        <h3>Artificial Intelligence & Machine Learning Intern</h3>
+                        <h4><i class="fa-solid fa-briefcase"></i> UptoSkills</h4>
+                        <p class="timeline-desc">Internship focused on Artificial Intelligence and Machine Learning, with exposure to Python, data preprocessing, feature engineering and machine learning concepts.</p>
+                        <div class="tech-stack timeline-tech">
+                            <span class="tech-tag">Artificial Intelligence</span>
+                            <span class="tech-tag">Machine Learning</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Feature Engineering</span>
+                        </div>
                     </div>
+                </div>
 
+                <!-- Experience 2: Comedkares -->
+                <div class="timeline-item">
                     <div class="timeline-dot bg-accent"></div>
                     <div class="timeline-content card glass-card">
-                        <span class="timeline-date"> Present</span>
+                        <div class="timeline-header">
+                            <span class="timeline-date"><i class="fa-regular fa-calendar"></i> April 2026 – July 2026</span>
+                            <span class="timeline-status"><i class="fa-solid fa-circle-check"></i> Completed</span>
+                        </div>
                         <h3>AI Research Project Developer</h3>
-                        <p><strong>Company:</strong> comedkares</p>
-                        <p><strong>Duration:</strong> 4 months</p>
-                        <p>AI-powered personalized learning recommendation system using LLMs, RAG, and vector databases.
-                            Tech: Python, GPT‑4, LangChain, Pinecone, Streamlit.</p>
-
+                        <h4><i class="fa-solid fa-briefcase"></i> Comedkares</h4>
+                        <p class="timeline-desc">Worked on an AI-powered personalized learning recommendation system using Large Language Models (LLMs), Retrieval-Augmented Generation (RAG), and vector databases.</p>
+                        <div class="tech-stack timeline-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">React.js</span>
+                            <span class="tech-tag">FastAPI</span>
+                            <span class="tech-tag">Supabase</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">LLMs</span>
+                            <span class="tech-tag">RAG</span>
+                        </div>
                     </div>
                 </div>
 
-                <!-- MCA -->
+                <!-- Experience 3: Codec Technologies Pvt. Ltd. -->
+                <div class="timeline-item">
+                    <div class="timeline-dot bg-accent"></div>
+                    <div class="timeline-content card glass-card">
+                        <div class="timeline-header">
+                            <span class="timeline-date"><i class="fa-regular fa-calendar"></i> 20 September 2025 – 20 October 2025</span>
+                            <span class="timeline-status"><i class="fa-solid fa-circle-check"></i> Completed</span>
+                        </div>
+                        <h3>Data Science Intern</h3>
+                        <h4><i class="fa-solid fa-briefcase"></i> Codec Technologies Pvt. Ltd.</h4>
+                        <p class="timeline-desc">Worked on data preprocessing, data cleaning, analysis and feature engineering using Python, Pandas and NumPy. Gained practical experience in developing and evaluating machine learning models.</p>
+                        <div class="tech-stack timeline-tech">
+                            <span class="tech-tag">Data Science</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Pandas</span>
+                            <span class="tech-tag">NumPy</span>
+                            <span class="tech-tag">Machine Learning</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education 1: MCA -->
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content card">
-                        <span class="timeline-date">2024 - 2026</span>
+                        <div class="timeline-header">
+                            <span class="timeline-date"><i class="fa-regular fa-calendar"></i> 2024 – 2026</span>
+                            <span class="timeline-status graduation"><i class="fa-solid fa-graduation-cap"></i> Graduated</span>
+                        </div>
                         <h3>Master of Computer Applications (MCA)</h3>
-                        <h4>Dr. Ambedkar Institute of Technology</h4>
-                        <p><strong>CGPA:</strong> 8.94</p>
+                        <h4><i class="fa-solid fa-building-columns"></i> Dr. Ambedkar Institute of Technology</h4>
+                        <p class="timeline-meta"><strong>CGPA:</strong> 8.94</p>
                     </div>
                 </div>
 
-                <!-- BCA -->
+                <!-- Education 2: BCA -->
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content card">
-                        <span class="timeline-date">2021 - 2024</span>
+                        <div class="timeline-header">
+                            <span class="timeline-date"><i class="fa-regular fa-calendar"></i> 2021 – 2024</span>
+                            <span class="timeline-status graduation"><i class="fa-solid fa-graduation-cap"></i> Graduated</span>
+                        </div>
                         <h3>Bachelor of Computer Applications (BCA)</h3>
-                        <h4>Nrupathunga University (Main Campus) Bangalore</h4>
-                        <p><strong>CGPA:</strong> 9.15</p>
+                        <h4><i class="fa-solid fa-building-columns"></i> Nrupathunga University (Main Campus) Bangalore</h4>
+                        <p class="timeline-meta"><strong>CGPA:</strong> 9.15</p>
                     </div>
                 </div>
 
-                <!-- PU College -->
+                <!-- Education 3: PU College -->
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content card">
-                        <span class="timeline-date">2018 - 2020</span>
-                        <h3>PCMB</h3>
-                        <h4>Mahesh PU College Tumkur</h4>
-                        <p><strong>Percentage:</strong> 82.83%</p>
+                        <div class="timeline-header">
+                            <span class="timeline-date"><i class="fa-regular fa-calendar"></i> 2018 – 2020</span>
+                        </div>
+                        <h3>Pre-University Course (PCMB)</h3>
+                        <h4><i class="fa-solid fa-school"></i> Mahesh PU College Tumkur</h4>
+                        <p class="timeline-meta"><strong>Percentage:</strong> 82.83%</p>
                     </div>
                 </div>
 
-                <!-- High School -->
+                <!-- Education 4: High School -->
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content card">
-                        <span class="timeline-date">2017 - 2018</span>
-                        <h3>High School</h3>
-                        <h4>SAC Mayura English Medium High School</h4>
-                        <p><strong>Percentage:</strong> 91.52%</p>
+                        <div class="timeline-header">
+                            <span class="timeline-date"><i class="fa-regular fa-calendar"></i> 2017 – 2018</span>
+                        </div>
+                        <h3>High School (SSLC)</h3>
+                        <h4><i class="fa-solid fa-school"></i> SAC Mayura English Medium High School</h4>
+                        <p class="timeline-meta"><strong>Percentage:</strong> 91.52%</p>
                     </div>
-
-
                 </div>
             </div>
         </div>
-        </div>
     </section>
 
-
-
+    <!-- Certifications Section -->
     <section id="certifications" class="certifications section hidden">
         <div class="container">
             <h2 class="section-title">Certifications</h2>
             <div class="cert-grid">
                 <a href="https://drive.google.com/file/d/1XSmZAe7uonwOzcreuEZ-WS3VhoEqzfEC/view?usp=drivesdk"
-                    class="cert-card card" target="_blank"
-                    style="text-decoration: none; color: inherit; display: flex;">
+                    class="cert-card card hover-lift" target="_blank" rel="noopener noreferrer">
                     <div class="cert-icon"><i class="fa-solid fa-certificate"></i></div>
                     <div class="cert-info">
                         <h3>Python for Data Science</h3>
@@ -287,8 +330,7 @@
                     </div>
                 </a>
                 <a href="https://drive.google.com/file/d/1U5wKGMgEcPcYaH6ozpPct0JJUreELRsd/view?usp=drivesdk"
-                    class="cert-card card" target="_blank"
-                    style="text-decoration: none; color: inherit; display: flex;">
+                    class="cert-card card hover-lift" target="_blank" rel="noopener noreferrer">
                     <div class="cert-icon"><i class="fa-solid fa-award"></i></div>
                     <div class="cert-info">
                         <h3>GenAI Powered Data Analytics Job Simulation</h3>
@@ -296,8 +338,7 @@
                     </div>
                 </a>
                 <a href="https://drive.google.com/file/d/14jQAjA-Yz6AzhohKqzmLY-aqaIjA07jy/view?usp=drivesdk"
-                    class="cert-card card" target="_blank"
-                    style="text-decoration: none; color: inherit; display: flex;">
+                    class="cert-card card hover-lift" target="_blank" rel="noopener noreferrer">
                     <div class="cert-icon"><i class="fa-solid fa-briefcase"></i></div>
                     <div class="cert-info">
                         <h3>Data Science Internship</h3>
@@ -314,9 +355,11 @@
             <h2 class="section-title">My Resume</h2>
             <div class="resume-content card glass-card">
                 <i class="fa-regular fa-file-pdf resume-icon"></i>
-                <p>Want to know more about my academic background, skills, and experience? Download my full resume.</p>
+                <p>Want to know more about my academic background, technical skills, and experience? Download my full resume.</p>
                 <a href="https://drive.google.com/file/d/14FzL0uD7C41QVIqwr2ahWXVbOHF1pXsT/view?usp=drivesdk"
-                    class="btn btn-primary resume-btn"><i class="fa-solid fa-download"></i> Download Resume</a>
+                    target="_blank" rel="noopener noreferrer" class="btn btn-primary resume-btn">
+                    <i class="fa-solid fa-download"></i> Download Resume
+                </a>
             </div>
         </div>
     </section>
@@ -326,8 +369,7 @@
         <div class="container">
             <div class="contact-box card gradient-card">
                 <h2>Let's Get In Touch</h2>
-                <p>I'm always open to discussing exciting opportunities, collaborations, or simply having a chat about
-                    AI and Machine Learning.</p>
+                <p>I am open to discussions regarding AI, Machine Learning, software engineering opportunities, collaborations, and projects.</p>
 
                 <div class="contact-details">
                     <a href="mailto:kbhoomika27@gmail.com" class="contact-item">
@@ -338,11 +380,11 @@
                         <i class="fa-solid fa-phone"></i>
                         <span>+91 8660991790</span>
                     </a>
-                    <a href="https://www.linkedin.com/in/bhumika-k-b8b709367/" target="_blank" class="contact-item">
+                    <a href="https://www.linkedin.com/in/bhumika-k-b8b709367/" target="_blank" rel="noopener noreferrer" class="contact-item">
                         <i class="fa-brands fa-linkedin"></i>
                         <span>LinkedIn Profile</span>
                     </a>
-                    <a href="https://github.com/Bhumika3005/" target="_blank" class="contact-item">
+                    <a href="https://github.com/Bhumika3005/" target="_blank" rel="noopener noreferrer" class="contact-item">
                         <i class="fa-brands fa-github"></i>
                         <span>GitHub Profile</span>
                     </a>
@@ -354,11 +396,11 @@
     <!-- Footer -->
     <footer>
         <div class="footer-container">
-            <p>&copy; 2024 Bhumika K. All rights reserved.</p>
+            <p>&copy; 2026 Bhumika K. All rights reserved.</p>
             <div class="social-links">
-                <a href="#"><i class="fa-brands fa-github"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://github.com/Bhumika3005/" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/bhumika-k-b8b709367/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="mailto:kbhoomika27@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
             </div>
         </div>
     </footer>
