@@ -693,6 +693,15 @@ ul {
     gap: 0.4rem;
 }
 
+.cert-info .cert-date {
+    color: var(--text-secondary);
+    font-size: 0.84rem;
+    margin-top: 0.35rem;
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+}
+
 .cert-action {
     margin-top: auto;
     padding-top: 1.2rem;
