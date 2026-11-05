@@ -702,6 +702,34 @@ ul {
     gap: 0.45rem;
 }
 
+.cert-details {
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
+.cert-desc {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 0.6rem;
+}
+
+.cert-meta-item {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.35rem;
+    line-height: 1.4;
+    display: flex;
+    align-items: baseline;
+    gap: 0.4rem;
+    flex-wrap: wrap;
+}
+
+.cert-meta-item strong {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
 .cert-action {
     margin-top: auto;
     padding-top: 1.2rem;
