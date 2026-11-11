@@ -675,6 +675,7 @@ ul {
 
 .cert-info {
     flex: 1;
+    min-width: 0;
 }
 
 .cert-info h3 {
@@ -682,6 +683,7 @@ ul {
     margin-bottom: 0.4rem;
     line-height: 1.4;
     color: var(--text-primary);
+    overflow-wrap: break-word;
 }
 
 .cert-info .cert-org {
